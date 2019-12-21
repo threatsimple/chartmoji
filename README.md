@@ -71,8 +71,8 @@ tool.
 There is an excellent tool available at
 https://github.com/sgreben/slack-emoji-upload.
 
-For convenience there a builds for 64 bit versions of mac, windows and linux in
-the `contrib/` folder.
+For convenience there are builds for 64 bit versions of mac, windows and linux
+in the `contrib/` folder.
 
 Example usage to upload all the line chartmoji:
 
@@ -105,8 +105,7 @@ Usage of ./macos-slack-emoji-uploader:
 ```
 
 *note* you may see errors about slack rate limiting you during the upload.
-These are just warnings and not a problem.  The client waits then attempts to
-upload that emoji again.
+These are just warnings, the client attempts to upload that emoji again.
 
 ## customizing the charts
 
@@ -122,7 +121,7 @@ bg_color = white
 transparent_bg = True
 ```
 
-Change those to one of the predefined colors.
+Change those to one of the predefined colors in the script.
 
 If you've got python3 installed and gnu make, you can run `make build` and
 the dependencies will be downloaded and images placed in `out/line/` and

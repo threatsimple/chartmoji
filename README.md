@@ -12,16 +12,27 @@
 
 # chartmoji
 
-A little dataviz can go a long way.
+A little dataviz goes a long way.
 
-Chartmoji are little embedded charts that can be used inline in certain tools
+Chartmoji are small embedded charts that can be used inline in certain tools
 like slack to communicate a series of values in a visual way.
 
-Assume you had a series of values from some system and wanted to show the trend,
-with the values  `[100, 50, 100, 0]`, you could show :chart_ln2101: instead.
+These are essentially an emoji implementation of Edward Tufte's sparkline
+concept.
+
+Assume you had a series of values and wanted to show the trend. Given the values
+`[100, 50, 100, 0]`, you could just include it inline :chart_ln2101: instead.
 It's much easier to understand the values this way.
 
-Or perhaps you wanted to show it as a bar chart, :chart_bar2101:.
+There's also a bar chart version: :chart_bar2101:.
+
+## quickstart
+
+Clone this repo, and the emoji can be found in `images/line` and `images/bar`.
+Upload them wherever you see fit to use them.
+
+There's a lot of images though, so if you're adding them to slack, you probably
+want to see the uploader section below to help automate that.
 
 
 ## how's it work?
@@ -34,13 +45,14 @@ These are pre-generated charts with 5 values plotted in a series, and values of
 :chart_ABCDE:
 ```
 
-If A=1,B=2,C=1,D=0,A=1,you'd have `:chart_12101:`.
+If A=1,B=2,C=1,D=0,A=1, you'd have `:chart_12101:`.
 
-Since you're adding all the charts as emoji, that image will be inlined.
+Since you're adding all the charts as emoji, that image will be inlined when
+referenced in your chat client.
 
 ## Uses
 
-We don't expect anyone to actually type these in a conversation, but for your
+I don't expect anyone to actually type these in a conversation, but for your
 integrations they make things much more interesting while still allowing you to
 communicate numerical trends in a pleasing way.
 
@@ -98,8 +110,11 @@ upload that emoji again.
 
 ## customizing the charts
 
-If you want to change the colors of the charts, edit bin/create.py.  You're
-looking for the lines near the top like:
+The current chart colors were chosen because they work well with both light and
+dark themes in slack.
+
+However, if you want to change the colors of the charts, edit bin/create.py.
+You're looking for the lines near the top like:
 
 ```
 line_color = gray
@@ -109,7 +124,7 @@ transparent_bg = True
 
 Change those to one of the predefined colors.
 
-Then, if you've got python3 installed and gnu make, you can run `make build` and
+If you've got python3 installed and gnu make, you can run `make build` and
 the dependencies will be downloaded and images placed in `out/line/` and
 `out/bar/`.
 
@@ -117,6 +132,16 @@ Then just upload the images to slack.
 
 ## formatting your data
 
-See the script in `bin/sample.py` for some code snippets on normalizing your
-data into a series within 0,1,2 range.
+See the script in `contrib/samples/mojify.py` for some code snippets on
+normalizing your data into a series within 0,1,2 range.
+
+example usage:
+
+```python
+>>> import mojify
+>>> values = [20,35,80,90,1]
+>>> mojify.chartmoji(values)
+':chart_ln01220:'
+>>>
+```
 

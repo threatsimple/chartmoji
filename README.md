@@ -12,7 +12,7 @@
 
 # chartmoji
 
-A little dataviz goes a long way.
+A little dataviz goes a long way.  <img src="https://github.com/threatsimple/chartmoji/blob/master/images/line/chart_ln02012.png?raw=true" width=20 height=20/>
 
 Chartmoji are small embedded charts that can be used inline in certain tools
 like slack to communicate a series of values in a visual way.
@@ -21,10 +21,10 @@ These are essentially an emoji implementation of Edward Tufte's sparkline
 concept.
 
 Assume you had a series of values and wanted to show the trend. Given the values
-`[100, 50, 100, 0]`, you could just include it inline :chart_ln2101: instead.
+`[100, 50, 100, 0]`, you could just include it inline <img src="https://github.com/threatsimple/chartmoji/blob/master/images/line/chart_ln12101.png?raw=true" width=20 height=20/>  instead.
 It's much easier to understand the values this way.
 
-There's also a bar chart version: :chart_bar2101:.
+There's also a bar chart version: <img src="https://github.com/threatsimple/chartmoji/blob/master/images/bar/chart_bar12101.png?raw=true" width=20 height=20/>.
 
 ## quickstart
 

@@ -12,8 +12,8 @@ bin/create.py: venv
 
 venv: $(VENV_DIR)/bin/activate
 $(VENV_DIR)/bin/activate:
-	python3 -m venv pyvenv
-	pyvenv/bin/pip3 install -r reqs.pip
+	python3 -m venv $(VENV_DIR)
+	$(VENV_DIR)/bin/pip3 install -r reqs.pip
 
 clean:
 	rm -rf $(VENV_DIR) out __pycache__

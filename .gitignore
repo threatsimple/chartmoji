@@ -2,3 +2,4 @@ out/
 pyvenv/
 __pycache__
 .*.swp
+.DS_STORE

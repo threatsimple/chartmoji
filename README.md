@@ -14,6 +14,10 @@
 
 A little dataviz goes a long way.  <img src="https://github.com/threatsimple/chartmoji/blob/master/images/line/chart_ln02012.png?raw=true" width=20 height=20/>
 
+Here's an example being used in a slack message.
+
+<img src="https://github.com/threatsimple/chartmoji/blob/master/contrib/misc/slack_preview.png?raw=true" width=60% />
+
 Chartmoji are small embedded charts that can be used inline in certain tools
 like slack to communicate a series of values in a visual way.
 

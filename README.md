@@ -1,18 +1,4 @@
-
-```
-      _                _                   _ _
-  ___| |__   __ _ _ __| |_ _ __ ___   ___ (_|_)
- / __| '_ \ / _` | '__| __| '_ ` _ \ / _ \| | |
-| (__| | | | (_| | |  | |_| | | | | | (_) | | |
- \___|_| |_|\__,_|_|   \__|_| |_| |_|\___// |_|
-                                        |__/
-
-```
-
-
-# chartmoji
-
-A little dataviz goes a long way.  <img src="https://github.com/threatsimple/chartmoji/blob/master/images/line/chart_ln02012.png?raw=true" width=20 height=20/>
+# A little dataviz goes a long way.  <img src="https://github.com/threatsimple/chartmoji/blob/master/images/line/chart_ln02012.png?raw=true" width=20 height=20/>
 
 Here's an example being used in a slack message.
 

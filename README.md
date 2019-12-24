@@ -16,6 +16,10 @@ It's much easier to understand the values this way.
 
 There's also a bar chart version: <img src="https://github.com/threatsimple/chartmoji/blob/master/images/bar/chart_bar12101.png?raw=true" width=20 height=20/>.
 
+If you want to see them in action (and play with them) you can join this slack channel.
+
+https://join.slack.com/t/chartmoji/shared_invite/enQtODg1NDg3MDgyMTk3LTM5ZjA2MTI3NWVmNzI1Y2M1MTRjMjcwYWEyNTUxZGRlZDMyNzBlOWQ3YzI0ZGIwNmFiNTBiNTUwMzc4ZDc2YTE
+
 ## quickstart
 
 Clone this repo, and the emoji can be found in `images/line` and `images/bar`.
